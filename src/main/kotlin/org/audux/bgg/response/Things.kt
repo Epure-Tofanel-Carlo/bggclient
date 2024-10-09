@@ -55,6 +55,7 @@ data class Things(
  *
  * @see org.audux.bgg.request.things
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Serializable
 data class Thing(
     /** Unique BGG identifier. */
